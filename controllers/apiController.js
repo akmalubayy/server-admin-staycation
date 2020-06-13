@@ -57,12 +57,12 @@ module.exports = {
       };
 
       res.status(200).json({
-        mostPicked,
         hero: {
           travelers: traveler.length,
           treasures: treasure.length,
           cities: city.length,
         },
+        mostPicked,
         category,
         testimonial,
       });
